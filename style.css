@@ -1,0 +1,449 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+#video-background{
+    position: fixed;
+    right: 0;
+    bottom: 9;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    
+    }
+    
+    
+    .veezcoin{
+    width: 30px;
+    height: 40px;
+    
+    }
+    
+    
+    
+
+    .coin1{
+        width: 40px;
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+        }
+
+
+
+body{
+    background: url(image/white.jpg);
+    background-position: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    font-style: italic;
+
+}
+nav{
+    background: linear-gradient(to right, rgb(197, 3, 197), rgb(38, 1, 65));
+    height: 70px;
+color:white;
+display: flex;
+justify-content: space-between;
+
+}
+
+nav .mainMenu {
+display: flex;
+list-style: none;
+}
+
+nav .mainMenu li a{
+display: inline-block;
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+font-size: 22px;
+padding: 15px;
+text-decoration: none;
+text-transform: uppercase;
+color: white;
+font-size: 1rem;
+
+}
+nav li a:hover{
+    background: orangered;
+}
+
+nav .openMenu {
+font-size: 2rem;
+margin: 20px;
+display: none;
+cursor: pointer;
+}
+
+nav .mainMenu .closeMenu , .icon i {
+font-size: 2rem;
+display: none;
+cursor: pointer;
+}
+
+.bxl-telegram:hover{
+color: blue;
+}
+.bxl-instagram:hover{
+color: orangered;
+}
+.bxl-twitter:hover{
+color: aqua;
+}
+.bxl-github:hover{
+color: chartreuse;
+}
+
+
+
+@media(max-width:800px){
+nav .mainMenu {
+height: 100vh;
+position: fixed;
+top:20%;
+right: 0;
+left: 0;
+z-index: 10;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: url(image/background.jpeg);
+backdrop-filter: blur(6px);
+transition: top 1s ease ;
+display: none;
+}
+
+nav .mainMenu .closeMenu{
+display: block;
+position: absolute;
+top: 30px;
+right: 20px;
+
+
+}
+.toncoin{
+width: 40px;
+}
+
+.toncover{
+display: flex;
+flex-direction: row;
+margin-top: 2rem;
+justify-content: space-around;
+
+}
+
+nav .openMenu{
+display: block;
+}
+
+nav .mainMenu li a:hover{
+    background: none;
+    color: orangered;
+
+}
+.icon i {
+display: inline-block;
+padding: 12px;
+
+}
+
+.coin1{
+width: 40px;
+margin-top: 1rem;
+margin-left: 1rem;
+}
+#video-background{
+position: fixed;
+right: 0;
+bottom: 9;
+min-width: 100%;
+min-height: 100%;
+z-index: -1;
+
+}
+
+
+.veezcoin{
+width: 180px;
+filter: drop-shadow(1px 7px  black);
+margin-left: auto;
+margin-right: auto;
+margin-top: 2rem;
+height: auto;
+cursor: pointer;
+transition-duration: 0.4s;
+-webkit-transition-duration: 0.4s;
+}
+
+.veezcoin:active {
+transform: translateY(5px);
+
+}
+
+.veezcoin:hover{
+    transition-duration: 0.1s;
+
+}
+
+
+.img{
+background: none;
+display: flex;
+;
+flex-direction: row;
+justify-items: center;
+
+}
+
+.bx-home-alt-2{
+font-size: 40px;
+
+}
+
+.bx-home-alt-2:hover{
+background: linear-gradient(to right,rgb(211, 6, 211),rgb(35, 2, 59));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+}
+
+.bx-task{
+font-size: 40px;
+
+}
+.bx-task:hover{
+    background: linear-gradient(to right,rgb(211, 6, 211),rgb(35, 2, 59));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.bx-trending-up{
+font-size: 40px;
+}
+.bx-trending-up:hover{
+    background: linear-gradient(to right,rgb(211, 6, 211),rgb(35, 2, 59));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.bx-group{
+font-size: 40px;
+}
+.bx-group:hover{
+    background: linear-gradient(to right,rgb(211, 6, 211),rgb(35, 2, 59));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+}
+
+.bx-wallet-alt{
+font-size: 40px;
+
+}
+
+.bx-wallet-alt:hover{
+    background: linear-gradient(to right,rgb(211, 6, 211),rgb(35, 2, 59));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.cover{
+    cursor: pointer;
+background: transparent;
+border: 1px solid black;
+border: none;
+border-radius: 10px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+position: fixed;
+top: 87%;;
+
+}
+
+
+span{
+font-size: 10px;
+color: rgb(0, 0, 0);
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+.level-wrapper{
+align-items: center;
+margin-top: 1rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+
+.energy{
+    cursor: pointer;
+    border: 2px solid black;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    background: transparent;
+    padding: 7px 7px 7px 7px;
+    font-size: 18px;
+
+}
+
+.span11{
+font-weight: 600;
+color: rgb(0, 0, 0);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 20px;
+
+}
+
+
+
+.bxs-bolt{
+    font-size: 25px; 
+    color: rgb(211, 9, 211);
+
+}
+ .bxs-rocket{
+    background: linear-gradient(to right,rgb(54, 4, 65),rgb(228, 6, 248));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+
+
+ }
+
+ .info{
+   display: flex;
+   margin-top: 1rem;
+   flex-direction: row;
+   justify-content: space-between; 
+ }
+
+ .bx-user{
+    background: linear-gradient(to right,rgb(211, 6, 211),rgb(150, 118, 173));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+
+ }
+
+ .bx-gift{
+    font-size: 22px;
+    background: linear-gradient(to right,rgb(211, 6, 211),rgb(171, 128, 202));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+ }
+
+#span{
+ text-align: center;
+ color: white;
+ font-size: 12px;
+ font-weight: 900;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+}
+.gift-background{
+    border: 2px solid black;
+    cursor: pointer;
+    align-items: center;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+}
+
+.user-background{
+display: flex;
+justify-content: center;
+background: black;
+border: 2px solid black;
+border-radius: 10px;
+width: 100px;
+
+
+}
+
+.spa{
+    font-weight: 800;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bx-bitcoin{
+font-size: 40px;
+
+}
+
+.level{
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-top: 0.5rem;
+
+}
+
+h2{
+font-size: 30px;
+font-style: normal;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.boost-btn{
+border: 2px solid black;
+display: flex;
+justify-content: center;
+width: 100px; 
+padding: 4px 5px 4px 5px;
+cursor: pointer;
+height: 35px;
+margin-top: 0rem;
+background: black;
+border-radius: 10px;
+
+}
+
+
+.span1{
+    color: white;
+font-weight: 900;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 15px;
+}
+
+
+
+
+
+
+}
